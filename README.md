@@ -12,7 +12,7 @@ Refer to the image attached for a visual represntation of the running server:
 ###### Create a new virtual environment (Optional but Recommended)
 Following commands can be used to create a new virtual environment using python3
 
-`python3 -m pip install --user virtualenv`
+`python3 -m pip install --user virtualenv`\
 `python3 -m venv <env_name>`
 
 Activate the virtual environment and go to the directory where the repo is cloned
