@@ -23,5 +23,15 @@ Activate the virtual environment and go to the directory where the repo is clone
 ###### Start server
 `python3 backend.py`
 
+## End points
+
+1. Post request on `http://localhost:5000/upload` to upload a file on the server.
+2. Get request on `http://localhost:5000/filter_compoundID` to split the uploaded file into 3 child files (based upon if the Accepted CompoundID ends with PC, LPC or plasmalogen).
+3. Get request on `http://localhost:5000/roundoff_retention` to roundoff the retention time to nearest natural number
+4. Get request on `http://localhost:5000/find_mean` to find the mean of all the metabolites which have same "Retention Time Roundoff" across all the samples.
+
+**Note: Server will return a zip file contanining the result in excel sheets for GET requests*
+
+
 ## Learn more
 Learn more about virtual environments from [Virtual env documentation](https://docs.python.org/3.9/library/venv.html).
